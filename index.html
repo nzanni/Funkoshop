@@ -10,29 +10,40 @@
 
 <body>
     <header> <!--Comienzo Header-->
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <img src="img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
             </picture>
-            <ul>
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item  with-submenu">
+                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="./pages/contact">CONTACTO</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="pages/login">LOGIN</a>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/login">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/cart">
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="./pages/cart">
                         <img src="img/icons/cart-icon.svg" alt="icono del carrito">
                     </a>
                 </li>
             </ul>
         </nav>
     </header> <!--Fin Header-->
-    <main class="container">
+    <main>
         <section>
             <article>
                 <h3>Nuevos Ingresos</h3>
@@ -148,6 +159,7 @@
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
 
     </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>
